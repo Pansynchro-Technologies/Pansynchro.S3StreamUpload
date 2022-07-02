@@ -1,8 +1,18 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+	  <TargetFrameworks>net6.0;net6.0-windows</TargetFrameworks>
+	  <Nullable>enable</Nullable>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <AssemblyVersion>2.2.4</AssemblyVersion>
+	  <FileVersion>2.2.4</FileVersion>
+	  <Version>2.2.4</Version>
+	  <Authors>Alex Hall, Pansynchro Technologies</Authors>
+	  <Product>S3 Stream Upload</Product>
+	  <Description>Manages streaming of data to AWS S3 without knowing the size beforehand and without keeping it all in memory or writing to disk.</Description>
+	  <PackageProjectUrl>https://github.com/Pansynchro-Technologies/Pansynchro.S3StreamUpload</PackageProjectUrl>
+	  <PackageReleaseNotes>Abort multipart upload when content is empty thanks to @kcalcagno</PackageReleaseNotes>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
